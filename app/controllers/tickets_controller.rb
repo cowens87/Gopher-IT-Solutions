@@ -1,8 +1,12 @@
 class TicketsController < ApplicationController
-  before_action :set_ticket, only: [:edit, :update, :show]
+  before_action :find_ticket, only: [:edit, :update, :show, :destroy]
 
   def index
-    @tickets = Ticket.all
+    if params[:sort] == 'newest'
+      @tickets = Ticket.sort_by_newest
+    else
+      @tickets = Ticket.all
+    end
   end
 
   def new
@@ -23,9 +27,15 @@ class TicketsController < ApplicationController
 
   def show; end
 
+  
+  def destroy
+    @ticket.destroy
+    redirect_to tickets_path
+  end
+
   private
 
-  def set_ticket
+  def find_ticket
     @ticket = Ticket.find(params[:id])
   end
 

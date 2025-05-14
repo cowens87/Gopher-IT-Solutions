@@ -1,37 +1,39 @@
-<h1 class="text-2xl font-bold mb-6">🎟️ All Tickets</h1>
+<h1 class="text-2xl font-bold mb-6">📝 All Tickets</h1>
 
-<p class="mb-4 space-y-2">
-  <%= button_to "🏠 Home", root_path,
-        method: :get,
-        form_class: "inline",
-        class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded" %><br>
+<div class="mb-4 flex flex-wrap gap-4">
+  <%= link_to "🏠 Home", root_path,
+        class: "link-button link-button-primary",
+        role: "button" %>
 
-  <%= button_to "➕ Create New Ticket", new_ticket_path,
-        method: :get,
-        form_class: "inline",
-        class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded" %>
-</p>
+  <%= link_to "➕ Create New Ticket", new_ticket_path,
+        class: "link-button link-button-primary",
+        role: "button" %>
 
-<table style="width: 100%; border-collapse: collapse;" border="1">
-  <thead style="background-color: #e0e7ff; color: #1e3a8a;">
+  <%= link_to "🆕 Sort by Newest", tickets_path(sort: "newest"),
+        class: "link-button link-button-secondary",
+        role: "button" %>
+</div><br>
+
+<table class="ticket-table">
+  <thead>
     <tr>
-      <th style="padding: 8px;">#</th>
-      <th style="padding: 8px;">Title</th>
-      <th style="padding: 8px;">Status</th>
-      <th style="padding: 8px;">Created</th>
-      <th style="padding: 8px;">Open For</th>
-      <th style="padding: 8px;">Actions</th>
+      <th>#</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Created</th>
+      <th>Open For</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <% @tickets.each_with_index do |ticket, index| %>
-      <tr style="background-color: <%= index.odd? ? '#f9fafb' : 'white' %>;">
-        <td style="padding: 8px;"><%= index + 1 %></td>
-        <td style="padding: 8px;"><%= link_to ticket.title.titleize, ticket_path(ticket) %></td>
-        <td style="padding: 8px;"><%= ticket.status.humanize %></td>
-        <td style="padding: 8px;"><%= ticket.created_at.strftime("%B %d, %Y") %></td>
-        <td style="padding: 8px;"><%= time_ago_in_words(ticket.created_at) %> ago</td>
-        <td style="padding: 8px;">
+      <tr id="ticket-<%= ticket.id %>" class="<%= index.odd? ? 'row-odd' : 'row-even' %>">
+        <td><%= index + 1 %></td>
+        <td><%= link_to ticket.title.titleize, ticket_path(ticket) %></td>
+        <td><%= ticket.status.humanize %></td>
+        <td><%= ticket.created_at.strftime("%B %d, %Y") %></td>
+        <td><%= time_ago_in_words(ticket.created_at) %> ago</td>
+        <td>
           🔍 <%= link_to "View", ticket_path(ticket) %> |
           ✏️ <%= link_to "Edit", edit_ticket_path(ticket) %>
         </td>

@@ -7,7 +7,7 @@ RSpec.describe 'Ticket details view', type: :feature do
   it "displays ticket attributes" do
     visit ticket_path(ticket)
 
-    expect(page).to have_content(ticket.title)
+    expect(page).to have_content(ticket.title.titleize)
     expect(page).to have_content("Status")
     expect(page).to have_content(ticket.status.humanize)
     expect(page).to have_content("Description")
