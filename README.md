@@ -1,6 +1,6 @@
 # 🎫 Gopher IT Solutions - Ticket Tracker
 
-![Gophers at Work](/images/gophers_at_work.png)
+![Gophers at Work](./images/gophers_at_work.png)
 
 Welcome to **Gopher IT Solutions**, a fun and functional Rails app for tracking IT support requests — powered by a team of imaginary forest gophers 🐿️. This app allows users to create, view, update, and list support tickets. It's built with Ruby on Rails and styled with simple HTML, Tailwind-style utilities, and inline CSS for clarity.
 
