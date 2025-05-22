@@ -28,7 +28,7 @@ RSpec.describe 'Ticket listing', type: :feature do
       expect(@t1.title.titleize).to appear_before(@t2.title.titleize)
     end
 
-    click_link "Sort by Newest"
+    click_link "🆕 Sort by Newest"
 
     within("table") do
       expect(page).to have_text(@t1.title.titleize)

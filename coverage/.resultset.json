@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cydn33/ticket-tracker/config/environment.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/application.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/application.rb": {
         "lines": [
           1,
           null,
@@ -56,7 +56,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/boot.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -64,7 +64,7 @@
           1
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/environments/test.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -135,7 +135,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/initializers/assets.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -151,7 +151,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/initializers/content_security_policy.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -180,7 +180,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/initializers/filter_parameter_logging.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -192,7 +192,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/initializers/inflections.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -212,7 +212,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/initializers/permissions_policy.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -229,7 +229,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/spec/factories/tickets.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/spec/factories/tickets.rb": {
         "lines": [
           1,
           1,
@@ -249,7 +249,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/config/routes.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -268,13 +268,13 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/app/helpers/application_helper.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/spec/features/tickets/index_spec.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/spec/features/tickets/index_spec.rb": {
         "lines": [
           1,
           null,
@@ -312,12 +312,13 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/spec/features/tickets/new_spec.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/spec/features/tickets/new_spec.rb": {
         "lines": [
           1,
           null,
@@ -339,7 +340,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/spec/features/tickets/show_spec.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/spec/features/tickets/show_spec.rb": {
         "lines": [
           null,
           1,
@@ -360,7 +361,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/spec/models/ticket_spec.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/spec/models/ticket_spec.rb": {
         "lines": [
           1,
           null,
@@ -388,7 +389,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/app/models/ticket.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/app/models/ticket.rb": {
         "lines": [
           1,
           1,
@@ -400,14 +401,14 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/app/models/application_record.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/app/controllers/tickets_controller.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/app/controllers/tickets_controller.rb": {
         "lines": [
           1,
           1,
@@ -456,7 +457,7 @@
           null
         ]
       },
-      "/Users/cydn33/ticket-tracker/app/controllers/application_controller.rb": {
+      "/Users/cydn33/theTreeHouse/ticket_tracker/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -465,6 +466,6 @@
         ]
       }
     },
-    "timestamp": 1747252767
+    "timestamp": 1747949356
   }
 }
