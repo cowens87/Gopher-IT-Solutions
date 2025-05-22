@@ -35,7 +35,8 @@
         <td><%= time_ago_in_words(ticket.created_at) %> ago</td>
         <td>
           🔍 <%= link_to "View", ticket_path(ticket) %> |
-          ✏️ <%= link_to "Edit", edit_ticket_path(ticket) %>
+          ✏️ <%= link_to "Edit", edit_ticket_path(ticket) %> |
+          🗑️ <%= link_to "Delete", ticket_path(ticket), data: { turbo_method: :delete } %> 
         </td>
       </tr>
     <% end %>
