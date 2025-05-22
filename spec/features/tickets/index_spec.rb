@@ -34,7 +34,6 @@ RSpec.describe 'Ticket listing', type: :feature do
       expect(page).to have_text(@t1.title.titleize)
       expect(page).to have_text(@t2.title.titleize)
       expect(@t2.title.titleize).to appear_before(@t1.title.titleize)
-      expect(@t1.title.titleize).to appear_after(@t2.title.titleize)
     end
   end
 end
